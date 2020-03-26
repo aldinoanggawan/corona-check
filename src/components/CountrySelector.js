@@ -18,9 +18,9 @@ const CountrySelector = () => {
     return (
         <>
             <h4>Select Country</h4>
-            <select onChange={handleChange}>
+            <select value={selectedCountry} onChange={handleChange}>
                 {countries.countries.map((country) => (
-                    <option selected={ selectedCountry === country.iso3 } key={country.iso3} value={country.iso3}>
+                    <option value={country.iso3}>
                         {country.name}
                     </option>
                 ))}
