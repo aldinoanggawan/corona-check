@@ -6,7 +6,7 @@ const useStats = (url) => {
     const [error, setError] = useState()
 
     useEffect(() => {
-        async function fetchData() {
+        const fetchData = async () => {
             setLoading(true)
             setError()
             console.log('Fetching Data...')

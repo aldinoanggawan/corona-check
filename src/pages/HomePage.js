@@ -1,16 +1,24 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Stats from '../components/Stats'
 import CountrySelector from '../components/CountrySelector'
-import { Link } from 'react-router-dom'
+
+const TitleContainer = styled.div`
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+`
 
 const HomePage = () => {
+
     return(
         <>
-            <div>
-                <Link to ="/indonesia">Go to Indonesia Statistics</Link>
-            </div>
+            <TitleContainer>
+                <div>Global Statistic</div>
+            </TitleContainer>
             <Stats url="https://covid19.mathdro.id/api"/>
+            <hr></hr>
             <CountrySelector />
         </>
     )
