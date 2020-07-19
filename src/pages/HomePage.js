@@ -1,27 +1,19 @@
 import React from 'react'
-import styled from 'styled-components'
 
-import Stats from '../components/Stats'
 import CountrySelector from '../components/CountrySelector'
+import Stats from '../components/Stats'
+import { H1, Container, Section } from '../styles/content'
 
-const TitleContainer = styled.div`
-    text-align: center;
-    font-weight: 600;
-    font-size: 50px;
-`
-
-const HomePage = () => {
-
-    return(
-        <>
-            <TitleContainer>
-                <div>Global Statistic</div>
-            </TitleContainer>
-            <Stats url="https://covid19.mathdro.id/api"/>
-            <hr></hr>
-            <CountrySelector />
-        </>
-    )
+const HomePage = ({ setIsGlobalPage }) => {
+  return (
+    <Section>
+      <Container>
+        <H1>Global Statistic</H1>
+        <Stats url='https://covid19.mathdro.id/api' />
+        <CountrySelector />
+      </Container>
+    </Section>
+  )
 }
 
 export default HomePage

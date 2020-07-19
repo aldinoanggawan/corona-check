@@ -1,20 +1,19 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 import HomePage from './pages/HomePage'
 import IdnPage from './pages/IdnPage'
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar'
 
 const App = () => {
-  return(
+  return (
     <>
       <NavBar />
       <Switch>
-        <Route exact path="/">
+        <Route exact path='/'>
           <HomePage />
         </Route>
-        <Route exact path="/indonesia">
+        <Route exact path='/indonesia'>
           <IdnPage />
         </Route>
       </Switch>
@@ -22,4 +21,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default App
