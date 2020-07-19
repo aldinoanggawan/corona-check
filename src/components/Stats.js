@@ -14,15 +14,15 @@ const Stats = ({ url }) => {
       <Container stats>
         <Card>
           <H2>Total Cases</H2>
-          <P stats>{stats.confirmed.value}</P>
+          <P stats>{stats.confirmed.value.toLocaleString()}</P>
         </Card>
         <Card>
           <H2>Recovered</H2>
-          <P stats>{stats.recovered.value}</P>
+          <P stats>{stats.recovered.value.toLocaleString()}</P>
         </Card>
         <Card>
           <H2>Deaths</H2>
-          <P stats>{stats.deaths.value}</P>
+          <P stats>{stats.deaths.value.toLocaleString()}</P>
         </Card>
       </Container>
     </>
