@@ -98,7 +98,7 @@ export const Img = styled.img`
 
 export const Section = styled.section`
   background: #fcfcfc;
-  padding: 1.5em 0;
+  padding: 1.8em 0 5em;
 `
 
 export const StyledLink = styled(Link)`
